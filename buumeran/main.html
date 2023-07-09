@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>Local Host Example</title>
+  </head>
+
+  <body>
+    <p>おはようございます</p>
+    <table>
+      <tr>
+        <th>今日の課題</th>
+      </tr>
+      {% for tasks in task %}
+      <tr>
+        <td>{{ tasks }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
